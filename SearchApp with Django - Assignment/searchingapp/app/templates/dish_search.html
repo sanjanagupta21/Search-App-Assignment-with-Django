@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dish Search</title>
+</head>
+<body>
+    <h1>Dish Search</h1>
+    
+    <form method="GET">
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <h2>Search Results:</h2>
+    <ul>
+        {% for dish in results %}
+        <li>{{ dish.name }} - {{ dish.location }}</li>
+        <br>
+        <li><b>Items: </b> {{ dish.items }}</li>
+        <br>
+        <li><b>Lat_long: </b>{{ dish.lat_long }}</li>
+        <br>
+        <li><b>Full Details: </b>{{ dish.full_details}}</li>
+
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
