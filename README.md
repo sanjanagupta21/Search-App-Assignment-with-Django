@@ -7,7 +7,11 @@ Please find the assignment in SearchApp with Django - Assignment folder -
 4) Screenshots Folder - Contains screenshots of the working project
 5) # Searchingapp folder
 5.1) manage.py
+
 5.2) searchingapp folder - django files like settings.py etc
-5.3) ## app folder -
-5.3.1) code written in all the files like models.py, views.py etc
-5.3.2) templates folder consists of the html files to display data on webpages. 
+
+6) # app folder -
+
+6.1) code written in all the files like models.py, views.py etc
+
+6.2) templates folder consists of the html files to display data on webpages. 
